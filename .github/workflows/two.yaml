@@ -4,4 +4,4 @@ jobs:
   jobx:
     uses: anupam-test-org/called/.github/workflows/one.yaml@main
     secrets:
-        ABC: what
+        ABC: ${{ secrets.REPO_SECRET }}
