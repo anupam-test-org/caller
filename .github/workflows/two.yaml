@@ -3,5 +3,5 @@ on: workflow_dispatch
 jobs:
   jobx:
     uses: anupam-test-org/called/.github/workflows/one.yaml@main
-    with:
-      ABC: what
+    secrets:
+        ABC: what
