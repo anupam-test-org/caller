@@ -1,12 +1,11 @@
 name: caller_wf
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+    inputs:
+      environment:
+        default: 'abc'
+        required: true
+        type: 'string'
 jobs:
-  joby:
-    runs-on: self-hosted
-    steps:
-      - run: |
-          echo 'REPO_VAR == ${{ vars.REPO_VAR }}'
   jobx:
     uses: anupam-test-org/called/.github/workflows/one.yaml@main
-    secrets:
-        ABC: ${{ vars.REPO_VAR }}
