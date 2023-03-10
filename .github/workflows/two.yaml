@@ -9,3 +9,5 @@ on:
 jobs:
   jobx:
     uses: anupam-test-org/called/.github/workflows/one.yaml@main
+    with:
+      environment: ${{ inputs.environment }}
