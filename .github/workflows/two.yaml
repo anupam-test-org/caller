@@ -8,4 +8,5 @@ on:
         type: 'string'
 jobs:
   jobx:
-    uses: anupam-test-org/called/.github/workflows/one.yaml@main
+      environment: abc
+      uses: anupam-test-org/called/.github/workflows/one.yaml@main
