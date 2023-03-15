@@ -8,6 +8,4 @@ on:
         type: 'string'
 jobs:
   jobx:
-      environment: abc
-      runs-on: self-hosted
       uses: anupam-test-org/called/.github/workflows/one.yaml@main
